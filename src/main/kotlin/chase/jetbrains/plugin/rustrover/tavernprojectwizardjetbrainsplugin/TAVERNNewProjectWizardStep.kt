@@ -16,15 +16,9 @@ class TAVERNNewProjectWizardStep(
 
     override fun setupUI(builder: Panel) {
         super.setupUI(builder)
-        builder.apply {
-            row("TAVERN Project Settings") {
-                label("Project Name:")
-            }
-        }
     }
 
     override fun setupProject(project: Project) {
         super.setupProject(project)
-        // Add your project setup logic here
     }
 }

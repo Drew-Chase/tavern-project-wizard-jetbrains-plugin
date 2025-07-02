@@ -26,11 +26,12 @@
     <!-- Product and plugin compatibility requirements.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
     <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.rustrover</depends>
+    <depends>com.intellij.modules.ultimate</depends>
 
     <!-- Extension points defined by the plugin.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
     <extensions defaultExtensionNs="com.intellij">
         <newProjectWizard.generator implementation="chase.jetbrains.plugin.rustrover.tavernprojectwizardjetbrainsplugin.TAVERNNewProjectWizard"/>
-
     </extensions>
 </idea-plugin>
