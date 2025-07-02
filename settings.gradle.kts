@@ -1,0 +1,1 @@
+rootProject.name = "tavern-project-wizard-jetbrains-plugin"
