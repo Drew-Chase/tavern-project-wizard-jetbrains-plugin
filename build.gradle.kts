@@ -1,3 +1,6 @@
+import org.jetbrains.intellij.platform.gradle.IntelliJPlatformType
+import org.jetbrains.intellij.platform.gradle.models.ProductRelease
+
 plugins {
     id("java")
     id("org.jetbrains.kotlin.jvm") version "2.1.0"
@@ -18,7 +21,7 @@ repositories {
 // Read more: https://plugins.jetbrains.com/docs/intellij/tools-intellij-platform-gradle-plugin.html
 dependencies {
     intellijPlatform {
-        create("RR", "2025.1")
+        create("RR", "2025.1.4")
         testFramework(org.jetbrains.intellij.platform.gradle.TestFrameworkType.Platform)
 
         // Add necessary plugin dependencies for compilation here, example:
@@ -35,6 +38,17 @@ intellijPlatform {
         changeNotes = """
       Initial version
     """.trimIndent()
+    }
+    pluginVerification{
+        ides{
+            recommended()
+            select {
+                types = listOf(IntelliJPlatformType.RustRover)
+                channels = listOf(ProductRelease.Channel.RELEASE)
+                sinceBuild = "232"
+                untilBuild = "241.*"
+            }
+        }
     }
 }
 
