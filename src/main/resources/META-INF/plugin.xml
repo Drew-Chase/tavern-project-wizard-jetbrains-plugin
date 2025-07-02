@@ -30,6 +30,7 @@
     <!-- Extension points defined by the plugin.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
     <extensions defaultExtensionNs="com.intellij">
+        <newProjectWizard.generator implementation="chase.jetbrains.plugin.rustrover.tavernprojectwizardjetbrainsplugin.TAVERNNewProjectWizard"/>
 
     </extensions>
 </idea-plugin>
