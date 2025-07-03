@@ -1,6 +1,7 @@
-# TAVERN Project Wizard
-
-![TAVERN Logo](src/main/resources/tavern-logo.png)
+<div style="text-align: center; display: flex; flex-direction: row">
+  <h1>TAVERN Project Wizard</h1>
+  <img src="src/main/resources/tavern-logo.png" width="256" alt="TAVERN Logo" height="256">
+</div>
 
 A JetBrains RustRover plugin that provides a project wizard for creating TAVERN (Tauri and Actix-based) projects.
 
@@ -12,20 +13,22 @@ The TAVERN Project Wizard simplifies the process of creating new TAVERN projects
 
 - **Easy Project Creation**: Generate TAVERN projects with just a few clicks
 - **Multiple Project Types**:
-  - **Tauri Projects**: Create desktop applications with web technologies
-  - **Actix Projects**: Set up Rust-based web servers
+    - **Tauri Projects**: Create desktop applications with web technologies
+    - **Actix Projects**: Set up Rust-based web servers
 - **Customizable Configuration**:
-  - Configure window properties for Tauri applications
-  - Set API port for Actix web servers
-  - Choose your preferred package manager (NPM, Yarn, PNPM)
+    - Configure window properties for Tauri applications
+    - Set API port for Actix web servers
+    - Choose your preferred package manager (NPM, Yarn, PNPM)
 - **Seamless Integration**: Works natively within RustRover IDE
 
 ## Screenshots
 
 ### Tauri Project Configuration
+
 ![Tauri Project Configuration](docs/screenshots/tauri-project-form.png)
 
 ### Actix Project Configuration
+
 ![Actix Project Configuration](docs/screenshots/actix-project-form.png)
 
 ## Installation
@@ -50,34 +53,34 @@ The TAVERN Project Wizard simplifies the process of creating new TAVERN projects
 3. Select **TAVERN Project** from the project types
 4. Choose between Tauri or Actix project type
 5. Configure your project settings:
-   - **For Tauri projects**:
-     - App Identifier (e.g., com.example.app)
-     - Window Title
-     - Window Dimensions (width and height)
-     - Custom Chrome option
-     - Package Manager (NPM, Yarn, or PNPM)
-   - **For Actix projects**:
-     - API Port
+    - **For Tauri projects**:
+        - App Identifier (e.g., com.example.app)
+        - Window Title
+        - Window Dimensions (width and height)
+        - Custom Chrome option
+        - Package Manager (NPM, Yarn, or PNPM)
+    - **For Actix projects**:
+        - API Port
 6. Click **Create** to generate your project
 
 ## Configuration Options
 
 ### Tauri Projects
 
-| Option | Description | Default |
-|--------|-------------|---------|
-| App Identifier | The unique identifier for your application | com.tauri.app |
-| Window Title | The title displayed in the application window | TAVERN App |
-| Window Width | The initial width of the application window | 800 |
-| Window Height | The initial height of the application window | 600 |
-| Custom Chrome | Whether to use custom window chrome | false |
-| Package Manager | The package manager to use for frontend dependencies | NPM |
+| Option          | Description                                          | Default       |
+|-----------------|------------------------------------------------------|---------------|
+| App Identifier  | The unique identifier for your application           | com.tauri.app |
+| Window Title    | The title displayed in the application window        | TAVERN App    |
+| Window Width    | The initial width of the application window          | 800           |
+| Window Height   | The initial height of the application window         | 600           |
+| Custom Chrome   | Whether to use custom window chrome                  | false         |
+| Package Manager | The package manager to use for frontend dependencies | NPM           |
 
 ### Actix Projects
 
-| Option | Description | Default |
-|--------|-------------|---------|
-| API Port | The port on which the Actix web server will listen | 8080 |
+| Option   | Description                                        | Default |
+|----------|----------------------------------------------------|---------|
+| API Port | The port on which the Actix web server will listen | 8080    |
 
 ## How It Works
 
