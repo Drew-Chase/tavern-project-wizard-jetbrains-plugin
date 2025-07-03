@@ -10,7 +10,6 @@ import com.intellij.platform.DirectoryProjectGenerator
 import com.intellij.platform.ProjectGeneratorPeer
 import com.intellij.ui.LayeredIcon
 import com.intellij.util.PlatformIcons
-import java.io.File
 import javax.swing.Icon
 
 class TAVERNTauriDirectoryProjectGenerator : DirectoryProjectGenerator<TAVERNTauriProjectSettings> {
@@ -29,16 +28,16 @@ class TAVERNTauriDirectoryProjectGenerator : DirectoryProjectGenerator<TAVERNTau
     }
 
     override fun validate(baseDirPath: String): ValidationResult {
-        val baseDir = File(baseDirPath)
-        if (!baseDir.exists()) {
-            return ValidationResult("The specified base directory does not exist.")
-        }
-        if (!baseDir.isDirectory) {
-            return ValidationResult("The specified base directory is not a valid directory.")
-        }
-        if (baseDir.listFiles()?.isEmpty() == false) {
-            return ValidationResult("The specified base directory is not empty.")
-        }
+//        val baseDir = File(baseDirPath)
+//        if (!baseDir.exists()) {
+//            return ValidationResult("The specified base directory does not exist.")
+//        }
+//        if (!baseDir.isDirectory) {
+//            return ValidationResult("The specified base directory is not a valid directory.")
+//        }
+//        if (baseDir.listFiles()?.isEmpty() == false) {
+//            return ValidationResult("The specified base directory is not empty.")
+//        }
 
         return ValidationResult.OK
     }
