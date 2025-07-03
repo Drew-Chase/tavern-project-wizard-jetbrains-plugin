@@ -19,6 +19,14 @@ class TAVERNProjectSettingsPanel : GeneratorPeerImpl<TAVERNTauriProjectSettings>
     // Track the currently selected tab
     private var selectedTabIndex = 0
 
+    // Expose the selected project type
+    val isActixSelected: Boolean
+        get() = selectedTabIndex == 1
+
+    // Expose the actix settings
+    val actixSettings: TAVERNActixProjectSettings
+        get() = actixPanel.settings
+
     override fun validate(): ValidationInfo? {
         // Validate based on the selected tab
         return when (selectedTabIndex) {
