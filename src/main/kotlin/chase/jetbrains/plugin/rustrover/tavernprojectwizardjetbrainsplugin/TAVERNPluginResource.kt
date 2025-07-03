@@ -1,9 +1,10 @@
-package chase.jetbrains.plugin.rustrover.tavernprojectwizardjetbrainsplugin;
+package chase.jetbrains.plugin.rustrover.tavernprojectwizardjetbrainsplugin
 
-import com.intellij.openapi.util.IconLoader;
+import com.intellij.openapi.util.IconLoader.getIcon
+import javax.swing.Icon
 
-import javax.swing.*;
-
-public class TAVERNPluginResource {
-    public static final Icon ICON = IconLoader.getIcon("META-INF/pluginIcon.svg", TAVERNPluginResource.class);
+class TAVERNPluginResource {
+    companion object {
+        val ICON: Icon = getIcon("META-INF/pluginIcon.svg", TAVERNPluginResource::class.java)
+    }
 }
