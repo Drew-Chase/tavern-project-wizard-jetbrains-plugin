@@ -36,7 +36,13 @@ intellijPlatform {
         }
 
         changeNotes = """
-      Initial version
+      <h3>1.0</h3>
+      <ul>
+        <li>Initial release of TAVERN Project Wizard</li>
+        <li>Support for creating Tauri projects with customizable settings</li>
+        <li>Support for creating Actix projects with API port configuration</li>
+        <li>Comprehensive documentation and README</li>
+      </ul>
     """.trimIndent()
     }
 }

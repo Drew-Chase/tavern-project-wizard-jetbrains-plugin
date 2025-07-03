@@ -13,14 +13,38 @@
     <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
     <description><![CDATA[
-        This plugin provides a project wizard for TAVERN projects in RustRover.
-        It allows users to create new TAVERN projects with a simple and intuitive interface.
-        The plugin is designed to enhance the development experience for TAVERN projects in RustRover.
+        The TAVERN Project Wizard simplifies the process of creating new TAVERN (Tauri and Actix-based) projects in RustRover.
+        It offers an intuitive interface for configuring and generating both Tauri and Actix-based projects, allowing developers
+        to quickly set up their development environment with the right structure and dependencies.
 
-        Features:
-        - Easy project creation
-        - Intuitive user interface
-        - Seamless integration with RustRover
+        <h2>Features</h2>
+        <ul>
+            <li><b>Easy Project Creation</b>: Generate TAVERN projects with just a few clicks</li>
+            <li><b>Multiple Project Types</b>:
+                <ul>
+                    <li><b>Tauri Projects</b>: Create desktop applications with web technologies</li>
+                    <li><b>Actix Projects</b>: Set up Rust-based web servers</li>
+                </ul>
+            </li>
+            <li><b>Customizable Configuration</b>:
+                <ul>
+                    <li>Configure window properties for Tauri applications</li>
+                    <li>Set API port for Actix web servers</li>
+                    <li>Choose your preferred package manager (NPM, Yarn, PNPM)</li>
+                </ul>
+            </li>
+            <li><b>Seamless Integration</b>: Works natively within RustRover IDE</li>
+        </ul>
+
+        <h2>Requirements</h2>
+        <ul>
+            <li>RustRover IDE (2025.1 or later)</li>
+            <li>Rust and Cargo installed</li>
+            <li>cargo-generate installed (<code>cargo install cargo-generate</code>)</li>
+            <li>For Tauri projects: Node.js and a package manager (npm, yarn, or pnpm)</li>
+        </ul>
+
+        <p>For more information, visit the <a href="https://github.com/drew-chase/tavern-project-wizard-jetbrains-plugin">GitHub repository</a>.</p>
   ]]></description>
 
     <!-- Product and plugin compatibility requirements.
