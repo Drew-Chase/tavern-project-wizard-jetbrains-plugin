@@ -1,7 +1,8 @@
 package chase.jetbrains.plugin.rustrover.tavernprojectwizardjetbrainsplugin
 
+import chase.jetbrains.plugin.rustrover.tavernprojectwizardjetbrainsplugin.settings.TAVERNProjectSettings
 import chase.jetbrains.plugin.rustrover.tavernprojectwizardjetbrainsplugin.settings.TAVERNTauriProjectSettings
-import chase.jetbrains.plugin.rustrover.tavernprojectwizardjetbrainsplugin.settings.ui.TAVERNTauriProjectSettingsPanel
+import chase.jetbrains.plugin.rustrover.tavernprojectwizardjetbrainsplugin.settings.ui.TAVERNProjectSettingsPanel
 import com.intellij.facet.ui.ValidationResult
 import com.intellij.openapi.module.Module
 import com.intellij.openapi.project.Project
@@ -24,7 +25,7 @@ class TAVERNTauriDirectoryProjectGenerator : DirectoryProjectGenerator<TAVERNTau
     }
 
     override fun createPeer(): ProjectGeneratorPeer<TAVERNTauriProjectSettings?> {
-        return TAVERNTauriProjectSettingsPanel()
+        return TAVERNProjectSettingsPanel()
     }
 
     override fun validate(baseDirPath: String): ValidationResult {
