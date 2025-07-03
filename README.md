@@ -1,7 +1,5 @@
-<div style="text-align: center; display: flex; flex-direction: row">
-  <h1>TAVERN Project Wizard</h1>
-  <img src="src/main/resources/tavern-logo.png" width="256" alt="TAVERN Logo" height="256">
-</div>
+# TAVERN Project Wizard
+<img src="src/main/resources/tavern-logo.png" width="256" alt="TAVERN Logo" height="256">   
 
 A JetBrains RustRover plugin that provides a project wizard for creating TAVERN (Tauri and Actix-based) projects.
 
